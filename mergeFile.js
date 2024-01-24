@@ -5,7 +5,7 @@ async function mergeFiles(file1, file2, result) {
     fs.readFile(file1, { encoding: "utf8" }),
     fs.readFile(file2, { encoding: "utf8" })
   ]);
-
+  
   await fs.writeFile(result, `${contents[0]} ${contents[1]}`);
   const newFile = await fs.readFile(result, { encoding: "utf8" });
   console.log(newFile);
