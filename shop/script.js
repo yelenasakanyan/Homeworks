@@ -52,19 +52,15 @@ itemsData.forEach(itemData => {
     shopItem.appendChild(itemName);
     shopItem.appendChild(itemImage);
 
-    if (itemData.oldPrice !== undefined) {
-        const oldPrice = document.createElement('p');
-        oldPrice.className = 'shop-item-price-old';
-        oldPrice.innerHTML = `The old price is <span>$${itemData.oldPrice}</span>. We have a mega sale!!!!`;
-        shopItem.appendChild(oldPrice);
-    }
+    const oldPrice = document.createElement('p');
+    oldPrice.className = 'shop-item-price-old';
+    oldPrice.innerHTML = `The old price is <span>$${itemData.oldPrice}</span>. We have a mega sale!!!!`;
+    shopItem.appendChild(oldPrice);
 
-    if (itemData.newPrice !== undefined) {
-        const newPrice = document.createElement('p');
-        newPrice.className = 'shop-item-price-new';
-        newPrice.innerHTML = `The new price is <span>$${itemData.newPrice}</span>`;
-        shopItem.appendChild(newPrice);
-    }
+    const newPrice = document.createElement('p');
+    newPrice.className = 'shop-item-price-new';
+    newPrice.innerHTML = `The new price is <span>$${itemData.newPrice}</span>`;
+    shopItem.appendChild(newPrice);
 
     shop_items.appendChild(shopItem);
 });
