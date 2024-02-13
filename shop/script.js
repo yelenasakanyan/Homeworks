@@ -26,11 +26,15 @@ const itemsData = [
     },
     {
         name: 'Pixel phone',
-        imageSrc: 'https://www.zdnet.com/a/img/resize/14fea081f0f7563f39e3052f8dd99148cfcbaa78/2023/10/05/eb21f6fb-53a1-4dd7-8694-088bafabec28/google-pixel-8-in-pink.jpg?auto=webp&fit=crop&height=1200&width=1200'
+        imageSrc: 'https://www.zdnet.com/a/img/resize/14fea081f0f7563f39e3052f8dd99148cfcbaa78/2023/10/05/eb21f6fb-53a1-4dd7-8694-088bafabec28/google-pixel-8-in-pink.jpg?auto=webp&fit=crop&height=1200&width=1200',
+        oldPrice: 20,
+        newPrice: 18
     },
     {
         name: 'HP laptop',
-        imageSrc: 'https://allegro.stati.pl/AllegroIMG/PRODUCENCI/HP/712C1EA/HP-Pavilion-15-ekran.jpg'
+        imageSrc: 'https://allegro.stati.pl/AllegroIMG/PRODUCENCI/HP/712C1EA/HP-Pavilion-15-ekran.jpg',
+        oldPrice: 20,
+        newPrice: 10
     }
 ];
 
