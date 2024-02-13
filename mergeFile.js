@@ -5,14 +5,22 @@ async function mergeFiles(file1, file2, result) {
     fs.readFile(file1, { encoding: "utf8" }),
     fs.readFile(file2, { encoding: "utf8" })
   ]);
-  
+
   await fs.writeFile(result, `${contents[0]} ${contents[1]}`);
   const newFile = await fs.readFile(result, { encoding: "utf8" });
-  console.log(newFile);
-  console.log("Files are merged")
+ 
+    return newFile;
+
+
+
 }
 const file1 = "text1.txt";
 const file2 = "text2.txt";
 const mergedFile = "mergedFile.txt";
 
-mergeFiles("text1.txt", "text2.txt", "mergedFile.txt");
+ mergeFiles("text1.txt", "text2.txt", "mergedFile.txt")
+    .then((value) => {
+      console.log(value);
+      console.log("Files are merged")
+    })
+

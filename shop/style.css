@@ -1,0 +1,35 @@
+#logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+#title {
+    display: inline-block;
+}
+
+.shop-item {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 8px;
+    min-height: 250px;
+    vertical-align: top;
+    margin: 8px;
+}
+
+.shop-item > img {
+    width: 200px;
+}
+
+.shop-item > h6 {
+    font-size: 24px;
+    margin: 8px 0px;
+    text-align: center;
+}
+
+.shop-item-price-old > span {
+    text-decoration: line-through;
+}
+
+.shop-item-price-new > span {
+    font-weight: bold;
+}
